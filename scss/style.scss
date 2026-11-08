@@ -1,13 +1,13 @@
 @use 'default-styles/default-styles';
-
+@use "colors" as c;
 
 header {
-  background-color: #14243A;
-  border-bottom: 3px solid #D8B56D;
+  background-color: c.$color-deep-purple;
+  border-bottom: 3px solid c.$color-coral;
   padding: 22px 35px;
 
   .site-title {
-    color: #F7F3EA;
+    color: c.$color-coral;
     font-size: 28px;
     font-weight: 700;
     margin: 0;
@@ -15,28 +15,25 @@ header {
   }
 }
 
+.main-navigation {
+  width: 100%;
+  background-color: c.$color-deep-purple;
+  color: c.$color-coral;
 
-nav ul {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  list-style: none;
-  margin-top: 20;
-  padding: 0;
+  nav {
+    .navbar-brand {
+      color: c.$color-soft-peach;
+    }
 
-  li a {
-    color: #F7F3EA;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-    transition: color 0.3s ease;
-
-    &:hover {
-      color: #D8B56D;
+    .navbar-nav {
+      li {
+        a {
+          color: c.$color-coral;
+        }
+      }
     }
   }
 }
-
 
 .cards {
   display: flex;
@@ -132,6 +129,7 @@ footer {
   .cards .card-wrapper {
     flex-basis: 25%;
   }
+
   .cards .card-wrapper .card img {
     height: 25vw;
   }

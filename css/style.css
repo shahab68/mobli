@@ -14,35 +14,28 @@ body {
 }
 
 header {
-  background-color: #14243A;
-  border-bottom: 3px solid #D8B56D;
+  background-color: #1A0F2E;
+  border-bottom: 3px solid #FF6B6B;
   padding: 22px 35px;
 }
 header .site-title {
-  color: #F7F3EA;
+  color: #FF6B6B;
   font-size: 28px;
   font-weight: 700;
   margin: 0;
   white-space: nowrap;
 }
 
-nav ul {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  list-style: none;
-  margin-top: 20;
-  padding: 0;
+.main-navigation {
+  width: 100%;
+  background-color: #1A0F2E;
+  color: #FF6B6B;
 }
-nav ul li a {
-  color: #F7F3EA;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 500;
-  transition: color 0.3s ease;
+.main-navigation nav .navbar-brand {
+  color: #F4D7D4;
 }
-nav ul li a:hover {
-  color: #D8B56D;
+.main-navigation nav .navbar-nav li a {
+  color: #FF6B6B;
 }
 
 .cards {
